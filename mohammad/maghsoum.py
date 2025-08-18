@@ -20,3 +20,15 @@ def shomaresh(n):
         if maghsoum(i)== 2:
             list2.append(i)
     return len(list2)
+# kmm
+def kmm(a, b):
+    if a> b:
+      m = a
+    else:
+        m = b
+    while(True):
+            if(m % a == 0) and (m % b == 0):
+              n = m
+              break
+            m += 1
+    return n
