@@ -20,6 +20,27 @@ def bmm(a,b):
     commonA_B=setB.intersection(setA)
     commonA_B_list=list(commonA_B)
     bmmA_B=max(commonA_B_list)
-    print(bmmA_B)
-    
+    return bmmA_B
 
+def kmm(a,b):
+    return (a*b)/bmm(a,b)
+
+def kasr():
+    souart1=int(input("صورت 1 را وارد نماييد"))
+    souart2=int(input("صورت2 را وارد نماييد"))
+    makh1=int(input("مخرج 1 وارد نماييد"))
+    makh2=int(input("مخرج 2 را وارد نماييد"))
+
+    #kmm makh1 and makh2
+    print(bmm(makh1,makh2))
+    kmmAB=kmm(makh1,makh2)
+
+    # souraAll1
+    souratAll1=(kmmAB/makh1)*souart1
+
+    #souratAll2
+    souratAll2=(kmmAB/makh2)*souart2
+    #souratAll
+    souratAll=souratAll1+souratAll2
+    #print result
+    print(str(souratAll)+"/"+str(kmmAB))
